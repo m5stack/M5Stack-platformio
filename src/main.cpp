@@ -2,17 +2,15 @@
 
 // the setup routine runs once when M5Stack starts up
 void setup(){
-  
-  // Initialize the M5Stack object
-  m5.begin();
-  
-  // LCD display
-  m5.Lcd.printf("hello world");
 
+  // Initialize the M5Stack object
+  M5.begin();
+
+  // LCD display
+  M5.Lcd.print("Hello world!");
 }
 
 // the loop routine runs over and over again forever
 void loop() {
-
-  // more examples reference the /lib/M5Stack/examples
+    M5.update();
 }
